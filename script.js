@@ -16,7 +16,7 @@ class Dog extends Animal {
 		super(name);
 		this.breed=breed;
 	}
-	makessund(){
+	makessound(){
 		console.log("woof")
 	}
 }
@@ -26,7 +26,7 @@ class cat extends Animal {
 		super(name);
 		this.breed=breed;
 	}
-	makessund(){
+	makessound(){
 		console.log("purr")
 	}
 // Do not change the code below this line
