@@ -1,10 +1,34 @@
 //complete this code
-class Animal {}
+class Animal {
+	constructor (name){
+		this.name=name;
+	}
+	get getname(){
+		return this.name
+	}
+	set setNmae(newName){
+		this.name=newNmae;
+	}
+}
 
-class Dog extends Animal {}
+class Dog extends Animal {
+	constructor (name,breed){
+		super(name);
+		this.breed=breed;
+	}
+	makessund(){
+		console.log("woof")
+	}
+}
 
-class Cat extends Animal {}
-
+class cat extends Animal {
+	constructor (name,breed){
+		super(name);
+		this.breed=breed;
+	}
+	makessund(){
+		console.log("purr")
+	}
 // Do not change the code below this line
 window.Animal = Animal;
 window.Dog = Dog;
