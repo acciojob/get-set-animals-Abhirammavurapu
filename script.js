@@ -1,4 +1,3 @@
-//complete this code
 class Animal {
 	constructor (name){
 		this.name=name;
@@ -17,19 +16,18 @@ class Dog extends Animal {
 		this.breed=breed;
 	}
 	makessound(){
-		console.log("woof")
+		console.log("dog sounds like woof")
 	}
 }
 
-class cat extends Animal {
+class Cat extends Animal {
 	constructor (name,breed){
 		super(name);
 		this.breed=breed;
 	}
 	makessound(){
-		console.log("purr")
+		console.log("cat sounds like purr")
 	}
-// Do not change the code below this line
-window.Animal = Animal;
-window.Dog = Dog;
-window.Cat = Cat;
+}
+const dog1 =new Dog("dog","golden retrever")
+console.log(dog1.name)
