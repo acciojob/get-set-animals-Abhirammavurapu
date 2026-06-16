@@ -1,33 +1,35 @@
 class Animal {
-	constructor (name){
-		this.name=name;
-	}
-	get getname(){
-		return this.name
-	}
-	set setNmae(newName){
-		this.name=newNmae;
-	}
-}
+  constructor(species) {
+    this._species = species;
+  }
 
-class Dog extends Animal {
-	constructor (name,breed){
-		super(name);
-		this.breed=breed;
-	}
-	makessound(){
-		console.log("dog sounds like woof")
-	}
+  get species() {
+    return this._species;
+  }
+
+  makeSound() {
+    console.log(`The ${this._species} makes a sound`);
+  }
 }
 
 class Cat extends Animal {
-	constructor (name,breed){
-		super(name);
-		this.breed=breed;
-	}
-	makessound(){
-		console.log("cat sounds like purr")
-	}
+  purr() {
+    console.log("purr");
+  }
 }
-const dog1 =new Dog("dog","golden retrever")
-console.log(dog1.name)
+
+class Dog extends Animal {
+  bark() {
+    console.log("woof");
+  }
+}
+
+// Creating an instance of Cat
+const myCat = new Cat("Siamese");
+myCat.makeSound(); // The Siamese makes a sound
+myCat.purr();      // purr
+
+// Creating an instance of Dog
+const myDog = new Dog("Golden Retriever");
+myDog.makeSound(); // The Golden Retriever makes a sound
+myDog.bark();      // woof
